@@ -86,14 +86,8 @@ extern crate serde_cbor;
 extern crate serde_yaml;
 #[cfg(feature = "toml")]
 extern crate toml;
-#[cfg(feature = "proc_macro")]
 extern crate yew_macro;
 
-#[macro_use]
-#[cfg(not(feature = "proc_macro"))]
-pub mod macros;
-
-#[cfg(feature = "proc_macro")]
 /// Alias module for the procedural macro.
 pub mod macros {
     pub use yew_macro::html;
@@ -135,8 +129,6 @@ where
 /// ```
 pub mod prelude {
     pub use yew_shared::prelude::*;
-
-    #[cfg(feature = "proc_macro")]
     pub use yew_macro::html;
 }
 

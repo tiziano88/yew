@@ -1,3 +1,5 @@
+#![recursion_limit="128"]
+
 use stdweb::web::Date;
 use yew::{html, Component, ComponentLink, Html, Renderable, ShouldRender};
 use yew::services::ConsoleService;

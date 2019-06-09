@@ -1,3 +1,5 @@
+#![recursion_limit="128"]
+
 mod router;
 mod routing;
 mod b_component;

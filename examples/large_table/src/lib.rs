@@ -1,3 +1,5 @@
+#![recursion_limit="128"]
+
 //! This demo originally created by https://github.com/qthree
 //! Source: https://github.com/qthree/yew_table100x100_test
 

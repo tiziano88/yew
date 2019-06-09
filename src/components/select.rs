@@ -17,7 +17,6 @@
 
 use callback::Callback;
 use html::{ChangeData, Component, ComponentLink, Html, Renderable, ShouldRender};
-#[cfg(feature = "proc_macro")]
 use macros::html;
 
 /// `Select` component.

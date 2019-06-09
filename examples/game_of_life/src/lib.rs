@@ -1,4 +1,4 @@
-#![recursion_limit="128"]
+#![recursion_limit="1024"]
 
 use log::info;
 use std::time::Duration;

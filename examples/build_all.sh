@@ -13,10 +13,10 @@ function build() {
             continue
         fi
         echo "Building: $example"
-        cd $example
-        cargo update
-        cargo web build --target wasm32-unknown-unknown
-        cd ..
+        #cd $example
+        #cargo update
+        cargo web build --target wasm32-unknown-unknown -p ${example::-1}
+        #cd ..
     done
 }
 
