@@ -26,7 +26,7 @@ impl Renderable<Model> for Model {
     fn view(&self) -> Html<Self> {
         html! {
             <div>
-                <button onclick=|_| Msg::Click>{ "Click" }</button>
+                <span contenteditable=true oninput=|_| Msg::Click>{ "edit me" }</span>
             </div>
         }
     }
